@@ -1,0 +1,178 @@
+<?php 
+$settings = array(
+	array(
+		'title' 	=> __( 'Hooks Options', 'woocustomcss' ),
+		'type'  	=> 'title',
+		'desc'  	=> 'WooCommerce Hooks options for the Custom Theme.',
+		'id'    	=> 'hooks_options',
+	),
+	array(
+		'title' 	=> __( 'Shop Page Hooks', 'woocustomcss' ),
+		'type' 		=> 'title',
+		'desc' 		=>  __( '', 'woocustomcss' ),
+		'id' 		=> 'woocommerce_shop_page_settings'
+	),
+	array(
+		'title' 	=> __( 'Woo Breadcrumb', 'woocustomcss' ),
+		'desc' 		=> __( 'Hide WooCommerce Breadcrumb from shop page.', 'woocustomcss' ),
+		'id' 		=> 'woo_breadcrumb',
+		'default'  	=> 'no',
+		'type' 		=> 'checkbox',                   
+		//'desc_tip' => false,
+	),
+	array(
+		'title' 	=> __( 'Woo Default Sidebar', 'woocustomcss' ),
+		'desc' 		=> __( 'Hide WooCommerce Sidebar from shop page.', 'woocustomcss' ),
+		'id' 		=> 'woo_sidebar',
+		'default'  	=> 'no',
+		'type' 		=> 'checkbox',                   
+		//'desc_tip' => false,
+	),
+	array(
+		'title' 	=> __( 'Woo Related products', 'woocustomcss' ),
+		'desc' 		=> __( 'Hide WooCommerce Related products from product detail page.', 'woocustomcss' ),
+		'id' 		=> 'woo_related_pro',
+		'default'  	=> 'no',
+		'type' 		=> 'checkbox',                   
+		//'desc_tip' => false,
+	),
+	array(
+		'title' 	=> __( 'Enable WordPress Gutenberg Editor', 'woocustomcss' ),
+		'desc' 		=> __( 'If you want to use WordPress Gutenberg Editor for the product edit section.', 'woocustomcss' ),
+		'id' 		=> 'post_type_gutenberg_editor',
+		'default'  	=> 'no',
+		'type' 		=> 'checkbox',                
+		//'desc_tip' => true,
+	),
+	array(
+		'title' 	=> __( 'Woo Categories Hide Empty', 'woocustomcss' ),
+		'desc' 		=> __( 'Show Empty Categories on the shop page.', 'woocustomcss' ),
+		'id' 		=> 'woo_categories_hide_empty',
+		'default'  	=> 'no',
+		'type' 		=> 'checkbox',                   
+		//'desc_tip' => false,
+	),
+	array(
+		'title' 	=> __( 'Woo Product Image Hover Effect', 'woocustomcss' ),
+		'desc' 		=> __( 'Enable Product Image hover effect for products.', 'woocustomcss' ),
+		'id' 		=> 'woo_product_img_hovr',
+		'default'  	=> 'no',
+		'type' 		=> 'checkbox',                   
+		//'desc_tip' => false,
+	),
+	array(
+		'type' 		=> 'sectionend',
+		'id' 		=> 'woocommerce_shop_page_settings'
+	),	
+	array(
+		'title' 	=> __( 'Products and Categery page Settings', 'woocustomcss' ),
+		'type' 		=> 'title',
+		'desc' 		=>  __( '', 'woocustomcss' ),
+		'id' 		=> 'woocommerce_shop_settings'
+	),	
+	array(
+		'title'    	=> __( 'Simple Product button', 'woocustomcss' ),
+		'desc'     	=> __( 'Here you can change the add to cart button text for Simple products. The default text is "Add To Cart"', 'woocustomcss' ),
+		'id'       	=> 'simple_pro_btn',
+		'placeholder'  => 'Add To Cart',
+		'default'  	=> '',
+		'type'     	=> 'text',
+		'desc_tip' 	=> true,
+	),
+	array(
+		'title'    	=> __( 'Variables Product button', 'woocustomcss' ),
+		'desc'     	=> __( 'Here you can change the add to cart button text for Variable products. The default text is "Select Options"', 'woocustomcss' ),
+		'id'       	=> 'variable_pro_btn',
+		'placeholder'  => 'Select Options',
+		'default'  	=> '',
+		'type'     	=> 'text',
+		'desc_tip' 	=> true,
+	),
+	array(
+		'title'    	=> __( 'External Product button', 'woocustomcss' ),
+		'desc'     	=> __( 'Here you can change the add to cart button text for External products. The default text is "Read More"', 'woocustomcss' ),
+		'id'       	=> 'external_pro_btn',
+		'placeholder'  => 'Buy product',
+		'default'  	=> '',
+		'type'     	=> 'text',
+		'desc_tip' 	=> true,
+	),
+	array(
+		'title'    	=> __( 'Grouped Product button', 'woocustomcss' ),
+		'desc'     	=> __( 'Here you can change the add to cart button text for Grouped products. The default text is "Read More"', 'woocustomcss' ),
+		'id'       	=> 'grouped_pro_btn',
+		'placeholder'  => 'View products',
+		'default'  	=> '',
+		'type'     	=> 'text',
+		'desc_tip' 	=> true,
+	),
+	array(
+		'title'    	=> __( 'Related Product Text', 'woocustomcss' ),
+		'desc'     	=> __( 'Here you can change the related products heading text. The default text is "Related Products"', 'woocustomcss' ),
+		'id'       	=> 'related_product_text',
+		'placeholder'  => 'Related Products',
+		'default'  	=> '',
+		'type'     	=> 'text',
+		'desc_tip' 	=> true,
+	),
+	array(
+		'type' 		=> 'sectionend',
+		'id' 		=> 'woocommerce_shop_settings'
+	),	
+	array(
+		'title' 	=> __( 'Cart Page Setting Hooks', 'woocustomcss' ),
+		'type'  	=> 'title',
+		'desc'  	=> '',
+		'id'    	=> 'cart_settin_options',
+	),
+	array(
+		'title'    	=> __( 'Before Table Text', 'woocustomcss' ),
+		'desc'     	=> __( 'Add text before cart table form. Using HTML format.', 'woocustomcss' ),
+		'id'       	=> 'table_before_text',
+		'type'     	=> 'textarea',
+		'desc_tip' 	=> true,
+	),
+	array(
+		'title'    	=> __( 'Cart Title Text', 'woocustomcss' ),
+		'desc'     	=> __( 'Add cart heading text.', 'woocustomcss' ),
+		'id'       	=> 'cart_h_text',
+		'type'     	=> 'text',
+		'desc_tip' 	=> true,
+	),
+	array(
+		'title'    	=> __( 'Cart Empty Return to Shop button text', 'woocustomcss' ),
+		'desc'     	=> __( 'Here you can change the cart page return to shop page button text. The default text is "Cart Totals"', 'woocustomcss' ),
+		'id'       	=> 'cartpagereturn_to_shop_text',
+		'placeholder'  => 'Return to shop',
+		'default'  	=> '',
+		'type'     	=> 'text',
+		'desc_tip' 	=> true,
+	),
+	array(
+		'type' 		=> 'sectionend',
+		'id'   		=> 'cart_settin_options',
+	),
+	array(
+		'title' 	=> __( 'Checkout Page Hooks', 'woocustomcss' ),
+		'type' 		=> 'title',
+		'desc' 		=>  __( '', 'woocustomcss' ),
+		'id' 		=> 'woocommerce_checkout_page_settings'
+	),
+	array(
+		'title'    	=> __( 'Message thankyou order received text', 'woocustomcss' ),
+		'desc'     	=> __( 'Here you can change the checkout after payment Thankyou message text.', 'woocustomcss' ),
+		'id'       	=> 'checkbox_message_thankyou_order_received_text',
+		'placeholder'  => 'Thank you. Your order has been received.',
+		'default'  	=> '',
+		'type'     	=> 'text',
+		'desc_tip' 	=> true,
+	),
+	array(
+		'type' 		=> 'sectionend',
+		'id' 		=> 'woocommerce_checkout_page_settings'
+	),
+	array(
+		'type' 		=> 'sectionend',
+		'id'   		=> 'hooks_options',
+	),
+);
