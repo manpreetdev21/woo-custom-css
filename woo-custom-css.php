@@ -1,7 +1,7 @@
 <?php
 /**
 * Plugin Name: Woo Custom SASS/CSS
-* Plugin URI: https://github.com/lucifermani21/woo-custom-css.git
+* Plugin URI: https://github.com/manpreetdev21/woo-custom-css.git
 * Description: WooCommerce plugin custom CSS option for the themes.
 * Version: 1.0.0
 * Author: Manpreet Singh
