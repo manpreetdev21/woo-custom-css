@@ -1,0 +1,55 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Dependencies.
+#
+# The plugin has no third-party dependency: the vendored scssphp that used to
+# live in include/composer/ was removed in 2.0.0. These are here so a stray
+# `composer install` or `npm install` during development is not committed by
+# accident. If you ever ship a real composer dependency, a distributed WP
+# plugin has to include vendor/ in the release — un-ignore it before tagging.
+node_modules/
+vendor/
+composer.phar
+
+# Build output / source maps
+*.map
+*.min.js.map
+*.min.css.map
+
+# Logs and debug
+*.log
+debug.log
+npm-debug.log*
+error_log
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Backups and scratch files — this plugin has been bitten by "-old" copies
+# being left behind and then loaded (or not) by mistake.
+*.bak
+*.orig
+*.rej
+*.tmp
+*-old.*
+*.backup
+
+# Release archives
+*.zip
+*.tar.gz
